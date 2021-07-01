@@ -20,3 +20,6 @@ const TodoListItem = ({ todo, onRemove, onToggle }) => {
 };
 
 export default React.memo(TodoListItem);
+
+// shouldComponentUpdate라는 라이프사이클은 함수형 컴포넌트에서는 React.memo로 대체되어 사용.
+//TodoListItem 컴포넌트는 todo, onRemove, onToggle이 바뀌지 않으면 리렌더링을 하지 않습니다.
